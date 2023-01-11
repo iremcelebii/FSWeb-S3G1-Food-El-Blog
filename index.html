@@ -2,9 +2,8 @@
 <html lang="tr">
   <head>
     <meta charset="UTF-8" />
-    <link href="index.css" type="text/css" rel="stylesheet" />
-
-    <link rel="stylesheet" type="text/css" href="stildosyam.css" />
+    <!-- css dosyanızı ekleyiniz-->
+    <link href="/index.css" type="text/css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css?family=Caveat|Lato"
       rel="stylesheet"
@@ -13,31 +12,28 @@
   </head>
 
   <body>
+    <!-- divin classını container verdik artık .container diyerek bu tagin altındaki taglere ulaşabiliriz css dosyasında -->
+    <!-- mesela a tag ine ulaşmak için .container header nav a {} deriz ve süslü parantezin için özelliklerine yazarız -->
     <div class="container">
       <header>
-        <!-- Kurum adı-->
         <h1>Food El Blog</h1>
-        <!-- Navigation -->
 
         <nav>
-          <a href="#">Ana Sayfa</a>
-          <a href="#">Aperatifler</a>
-          <a href="#">Vegan</a>
-          <a href="#">Yemekler</a>
-          <a href="#">Tatlılar</a>
-          <a href="#">İçecekler</a>
+          <a href="#"> Ana Sayfa </a>
+          <a href="#"> Aperatifler </a>
+          <a href="#"> Vegan </a>
+          <a href="#"> Yemekler </a>
+          <a href="#"> Tatlılar </a>
+          <a href="#"> İçecekler</a>
         </nav>
       </header>
     </div>
+
     <main>
       <div class="container">
-        <img src="images/banner.png" />
+        <img src="/images/banner.png" />
       </div>
     </main>
-
-    <!-- Image /images/banner.png -->
-
-    <!-- Pazarlama başlığı -->
     <section class="container">
       <h2>Hakkımızda</h2>
       <p>
@@ -49,53 +45,75 @@
         yediğiniz tüm burgerleri size unutturacak kadar eşsiz yaratıldı.
       </p>
     </section>
-    <!-- content -->
-    <section class="container">
-      <div class="content-img"></div>
+
+    <section class="container content-row">
+      <!-- div ler block olduğu için iki fivi alt alta gösterecek -->
+      <div class="img">
+        <img src="/images/yemek_1.jpg" />
+      </div>
+      <div class="text">
+        <h2>Yemekler</h2>
+        <p>
+          Bir fırında mantar soslu antrikot Türk mutfağının en özel ve en
+          gösterişli yemeklerinden biri olarak kabul edilir.<br />
+          <br />
+          Bu yemek için dana antrikot özel baharatlarla fırına verilir ve ağızda
+          dağılacak kadar yumuşayarak benzersiz bir deneyim için hazır hale
+          gelir. Yanında sebze sote, mantarlı özel sos ile bu harika şölen
+          tamamlanır.
+        </p>
+      </div>
     </section>
 
-    <h2>Yemekler</h2>
-    <!-- Image /images/yemek_1.jpg -->
+    <section class="container content-row">
+      <!-- div ler block olduğu için iki fivi alt alta gösterecek -->
 
-    <img src="images/yemek_1.jpg" />
-    <p>
-      Bir fırında mantar soslu antrikot Türk mutfağının en özel ve en gösterişli
-      yemeklerinden biri olarak kabul edilir. <br />
-      Bu yemek için dana antrikot özel baharatlarla fırına verilir ve ağızda
-      dağılacak kadar yumuşayarak benzersiz bir deneyim için hazır hale gelir.
-      Yanında sebze sote, mantarlı özel sos ile bu harika şölen tamamlanır.
-    </p>
-    <h3>Aperatifler</h3>
+      <div class="text">
+        <h2>Aperatif</h2>
+        <p>
+          Anadolu lezzetlerinden Avrupa’ya varana kadar bir yemek skalasını
+          sizlerle paylaşmak için yola çıktık. İnternet gibi güçlü bir bağ ile
+          mutfaklarınıza misafir olmak niyetindeyiz. E hadi o zaman, müsaitseniz
+          kahvaltıya, belki akşam yemeğine, bilemedin 5 çayına sizdeyiz.<br />
+          <br />
+          Yine de en çok sizleri bize bekleriz. Çünkü sadece bizim mutfağımızın
+          ocağı yanarsa biz sizin o maharetli ellerinizden çıkan lezzetlerin
+          tarifini nereden biliriz. İşte bu yüzden, hadi yine gelin; bizim
+          mutfağın kapısı yok, hep bekleriz.
+        </p>
+      </div>
+      <div class="img">
+        <img src="/images/aperatif.jpeg" />
+      </div>
+    </section>
 
-    <!-- Image /images/aperatif.jpeg -->
-    <img src="images/aperatif.jpeg" />
-    <p>
-      Anadolu lezzetlerinden Avrupa’ya varana kadar bir yemek skalasını sizlerle
-      paylaşmak için yola çıktık. İnternet gibi güçlü bir bağ ile mutfaklarınıza
-      misafir olmak niyetindeyiz. E hadi o zaman, müsaitseniz kahvaltıya, belki
-      akşam yemeğine, bilemedin 5 çayına sizdeyiz. <br />
-      Yine de en çok sizleri bize bekleriz. Çünkü sadece bizim mutfağımızın
-      ocağı yanarsa biz sizin o maharetli ellerinizden çıkan lezzetlerin
-      tarifini nereden biliriz. İşte bu yüzden, hadi yine gelin; bizim mutfağın
-      kapısı yok, hep bekleriz.
-    </p>
+    <section class="container content-row">
+      <!-- div ler block olduğu için iki fivi alt alta gösterecek -->
+      <div class="img">
+        <img src="/images/tatli_1.jpg" />
+      </div>
+      <div class="text">
+        <h2>Tatlılar</h2>
+        <p>
+          Taptaze tatlılarımız, fırınımız ustalarının özenle hazırladığı pastacı
+          kreması ile buluştu. Her sofraya yakışan alametifarikalarımız
+          tatlılarımız ile kendinizi ödüllendirin.
+        </p>
+      </div>
+    </section>
 
-    <h4>Tatlılar</h4>
-    <!-- Image /images/tatli_1.jpg -->
-    <img src="images/tatli_1.jpg" />
-    <p>
-      Taptaze tatlılarımız, fırınımız ustalarının özenle hazırladığı pastacı
-      kreması ile buluştu. Her sofraya yakışan alametifarikalarımız tatlılarımız
-      ile kendinizi ödüllendirin.
-    </p>
-    <h5>İletişim</h5>
-    <p>
-      yemek@foodelblog.com <br />
-      216-550-5905 <br />
-      Bağdat Cd. No:302/1 <br />
-      Kadıköy, İstanbul, 34728
-    </p>
+    <section class="container contact-section">
+      <address>
+        <h2>İletişim</h2>
+        <p>
+          <a href="mailto:yemek@foodelblog.com"> yemek@foodelblog.com</a> <br />
+          216-550-5905 <br />
+          Bağdat Cd. No:302/1 <br />Kadıköy, İstanbul, 34728
+        </p>
+      </address>
+    </section>
 
+    <footer></footer>
     <!-- footer -->
     Food El Blog Ana Sayfa Aperatifler Vegan Yemekler Tatlılar İçecekler
     @Copyright Food El Blog 2022

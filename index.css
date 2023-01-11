@@ -1,15 +1,18 @@
 /*======= Font rengini #3C373B yapan bir yeni bir universal selector yaratın*/
-
-*{
-  color: #3C373B;
+/* yazı rengi */
+* {
+  color: #3c373b;
 }
 
 h1 {
   font-family: "Gaegu", cursive;
-  margin: 20px 900px;
+  /* başlığın kapladığı alanın alttan üstten ve sağdan soldan boşlularını yazıyoruz. eğer 0 verirsek containerın içinde olduğu içinde olduğu 
+  alana kadar boşluk bırakıyoruz, eksi değerde containerı aşıyor mesela */
+  margin: 20px 0;
   /*=======  Font size'ı 60px yapın ve text'i ortalayın(center) */
-  text-align: : center;
   font-size: 60px;
+  /* metni ortalamak için */
+  text-align: center;
 }
 
 h2,
@@ -20,13 +23,8 @@ h6 {
   font-family: "Gaegu", cursive;
   margin-bottom: 0;
   padding: 0 10px;
-  /*=======  Font size'ı 30px yapın*/
-  font-size: 30px;
+  font-size: 23px;
 }
-
-/*======= Sayfadaki TÜM p tag'leri için aşağıdaki özellikleri içeren bir selector yaratın:
-
-*/
 
 p {
   font-size: 16px;
@@ -36,31 +34,27 @@ p {
   margin: 0;
 }
 
-/*======= Sayfadaki TÜM imajlar için aşağıdaki özellikleri içeren bir selector yaratın:
-
-*/
-
 img {
   border-radius: 10px;
+  /* bulundağı şeyin içindeki tam genişliği alacak. genişliğini sayı olarak vermeyince sayfayı küçültürsem resim de küüçülüyor*/
   width: 100%;
 }
-main{
 
-  background: gainsboro;
+main {
+  background: #cfcdca;
   padding: 20px;
 }
 
 .content-row {
   display: flex;
 }
-
 .content-row div {
   /*======= margin propery yaratın.  Değerini 20px olarak atayın*/
+  margin: 20px;
 }
-
 .container {
-  /*======= width property yaratın. Değerini 605px olarak atayın */
-  width: 605;
+  width: 830px;
+  /* container ları ortalamak için */
   margin: 0 auto;
 }
 
@@ -73,18 +67,26 @@ main{
   color: white;
   text-decoration: none;
   margin-bottom: 20px;
-  /*======= background property yaratın. Değerini #E79947 olarak atayınız.*/
-  background: #E79947;
+
+  background: #e79947;
 }
 
-.container header nav a:hover {
-  /*======= background property yaratın ve değeri white olsun.  Sonra, color property yaratın ve değerini yapın. */
+.img {
+  display: inline-block;
+  width: 38%;
+  padding: 10px;
+}
+
+.text {
+  display: inline-block;
+  width: 54%;
+}
+.container header nav a :hover {
+  /* :hover yazınca üzerine gelince değişsin istiyorum */
+
   background: white;
+  color: #e79947;
 }
-
-/*======= Hakkmızda bölümü için aşağıdaki stilleri içeren bir selector yaratın:
-  margin-top: 20px;
-*/
 
 .contact-section {
   border-top: 1px dashed black;
@@ -120,21 +122,20 @@ footer nav {
   display: flex;
 }
 
-/*======= Footer'daki anchor tag için aşağıdaki stilleri içeren bir selector yaratın:
+footer a {
   margin: 10px;
   color: black;
   text-decoration: underline;
-*/
+}
 
 footer nav a:first-child {
   margin-left: 0;
 }
-
-/*======= Footer nav'daki anchor tag için aşağıdaki stilleri içeren bir hover state yaratın:
+footer nav {
   color: white;
-*/
+}
 
 footer .footer-content .copyright {
   padding: 20px 0;
-  /*======= metni ortalayacak kodu yazın */
+  text-align: center;
 }
